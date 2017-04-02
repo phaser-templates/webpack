@@ -1,6 +1,6 @@
-# webpack-simple
+# webpack
 
-> A simple Phaser Webpack setup for quick prototyping
+> A Phaser Webpack setup
 
 ### Usage
 
@@ -8,7 +8,7 @@ This is a project template for [phaser-cli](https://github.com/nerdenough/phaser
 
 ``` bash
 $ npm install -g phaser-cli
-$ phaser init webpack-simple my-project
+$ phaser init webpack my-project
 $ cd my-project
 $ npm install
 $ npm run dev
