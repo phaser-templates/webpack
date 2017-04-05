@@ -10,4 +10,4 @@ class Play extends Phaser.State {
   }
 }
 
-export default Play;
+export default Play

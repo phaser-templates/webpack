@@ -7,4 +7,4 @@ class Boot extends Phaser.State {
   }
 }
 
-export default Boot;
+export default Boot
