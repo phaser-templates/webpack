@@ -1,20 +1,20 @@
 import 'pixi'
 import 'p2'
-import Phaser from 'phaser{{#community}}-ce{{/community}}'
+import Phaser from 'phaser'
 
-import Boot from './states/boot'
-import Play from './states/play'
-import Preload from './states/preload'
+import Boot from './states/Boot'
+import Preloader from './states/Preloader'
+import Play from './states/Play'
 
 class Game extends Phaser.Game {
   constructor () {
-    super(800, 600, Phaser.AUTO, 'game', null)
+    super(1024, 768, Phaser.AUTO, 'game')
 
-    this.state.add('boot', Boot)
-    this.state.add('preload', Preload)
-    this.state.add('play', Play)
+    this.state.add('Boot', Boot)
+    this.state.add('Preloader', Preloader)
+    this.state.add('Play', Play)
 
-    this.state.start('boot')
+    this.state.start('Boot')
   }
 }
 

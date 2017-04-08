@@ -30,15 +30,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: [
+          'babel-loader',
+          'eslint-loader'
+        ],
         exclude: /node_modules/
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
-        }
       },
       {
         test: /pixi\.js/,
