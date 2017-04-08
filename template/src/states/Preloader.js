@@ -4,7 +4,6 @@ export default class Preloader extends Phaser.State {
   constructor () {
     super()
 
-    this.starfield = null
     this.loader = null
   }
 
