@@ -30,8 +30,8 @@ module.exports = {
       {
         test: /\.js$/,
         use: [
-          'babel-loader',
-          'eslint-loader'
+          'babel-loader'{{#lint}},
+          'eslint-loader'{{/lint}}
         ],
         exclude: /node_modules/
       },
