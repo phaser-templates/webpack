@@ -10,7 +10,7 @@
   },
   "dependencies": {
     {{#community}}
-    "phaser-ce": "^2.8.5"
+    "phaser-ce": "^2.10.0"
     {{else}}
     "phaser": "^2.6.2"
     {{/community}}
